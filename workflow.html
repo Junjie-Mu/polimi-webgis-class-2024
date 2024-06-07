@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Group 6</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Grigna Settentrionale</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">home</a></li>
+							<li class="active"><a href="workflow.html">workflow</a></li>
+							<li><a href="results.html">results</a></li>
+							<li><a href="webgis.html.html">webgis</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/Junjie-Mu/polimi-webgis-class-2024" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header>
+									<h1>workflow</h1>
+									<p>This section will present the workflow applied to obtain the Landslide Susceptibility Map and an indicator of landslide hazard exposure.</p>
+								</header>
+								<div class="box">
+									<section class="posts">
+										<article>
+											<header>
+												<h3>STEP 1</h3>
+												<p>Data preprocessing for susceptibility mapping</p>
+											</header>
+											<p>Clipping the data, conducting DTM analysis, generating training and testing points, and sampling the resulting layers.</p>
+										</article>
+										<article>
+											<header>
+												<h3>step 2</h3>
+												<p>Susceptibility map generation</p>
+											</header>
+											<p>Conduct a random forest classification and transform the of the classifications confidence into class probability.</p>
+										</article>
+										<article>
+											<header>
+												<h3>step 3 & Step 4</h3>
+												<p>Exposure assessment</p>
+											</header>
+											<p>Preprocess the population map data and calculate the population counts within each susceptibility class.</p>
+										</article>
+										<article>
+											<header>
+												<h3>step 5</h3>
+												<p>Develop a website and WebGIS</p>
+											</header>
+											<p>Develop a website that explain what the project is about, the technologies and data used, the results achieved, and a WebGIS displaying a web map with the produced layers.</p>
+										</article>
+									</section>
+								</div>
+								<!--Basic data-->
+								<p style="text-align: center; font-size: x-large">Step 1 - Data preprocessing for susceptibility mapping</p>
+								<p style="text-align: center; font-size: large"><b>Basic data</b></p>
+								<p style="text-align: center"><b>The raw data after clipping and resampling</b></p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+
+										<div class="col-2">
+											<h3 style="text-align: center">DTM</h3>
+											<div style="font-size: 10pt; text-align: center">Digital Terrain Model is a digital representation of the Earth's surface.</div>
+										</div>
+										<div class="col-4"><span class="image fit"><img src="images/DTM.jpg" alt="" /></span></div>
+										<div class="col-2">
+											<h3 style="text-align: center">NDVI</h3>
+											<div style="font-size: 10pt; text-align: center">The Normalized Difference Vegetation Index is a numerical indicator used to assess the health and vigor of vegetation.</div>
+										</div>
+										<div class="col-4"><span class="image fit"><img src="images/NDVI.jpg" alt="" /></span></div>
+										<div class="col-2">
+											<h3 style="text-align: center">DUSAF</h3>
+											<div style="font-size: 10pt; text-align: center">La banca dati dell’uso del suolo in Lombardia is an Agricultural and forestry land use database of Lombardia.</div>
+										</div>
+										<div class="col-4"><span class="image fit"><img src="images/DUSAF.jpg" alt="" /></span></div>
+										<div class="col-2">
+											<h3 style="text-align: center">Roads</h3>
+											<div style="font-size: 10pt; text-align: center">The buffers of distance from the main roads in the area.</div>
+										</div>
+										<div class="col-4"><span class="image fit"><img src="images/Roads.jpg" alt="" /></span></div>
+										<div class="col-2">
+											<h3 style="text-align: center">Rivers</h3>
+											<div style="font-size: 10pt; text-align: center">The buffers of distance from the main rivers in the area.</div>
+										</div>
+										<div class="col-4"><span class="image fit"><img src="images/Rivers.jpg" alt="" /></span></div>
+										<div class="col-2">
+											<h3 style="text-align: center">geological faults</h3>
+											<div style="font-size: 10pt; text-align: center">The buffers of distance from the main geological faults in the area.</div>
+										</div>
+										<div class="col-4"><span class="image fit"><img src="images/Faults.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<!--Analyzed data-->
+								<p style="text-align: center; font-size: large"><b>Analyzed data</b></p>
+								<p style="text-align: center"><b>The data processed from DEM by QGIS</b></p>
+								<div class="box alt">
+									<div class="row gtr-50 gtr-uniform">
+
+										<div class="col-2">
+											<h3 style="text-align: center">Slope</h3>
+											<div style="font-size: 10pt; text-align: center">The inclination angle of the terrain, measures the rate of change in elevation between neighboring cells.</div>
+										</div>
+										<div class="col-4"><span class="image fit"><img src="images/Slope.jpg" alt="" /></span></div>
+										<div class="col-2">
+											<h3 style="text-align: center">Aspect</h3>
+											<div style="font-size: 10pt; text-align: center">Orientation of the slope of the terrain, which is useful for understanding the exposure of slopes to sunlight and wind patterns.</div>
+										</div>
+										<div class="col-4"><span class="image fit"><img src="images/Aespect.jpg" alt="" /></span></div>
+										<div class="col-2">
+											<h3 style="text-align: center">plan curvature</h3>
+											<div style="font-size: 10pt; text-align: center">Represents the slope curvature on the plan side which affect landslide creation.</div>
+										</div>
+										<div class="col-4"><span class="image fit"><img src="images/PlanCurvature.jpg" alt="" /></span></div>
+										<div class="col-2">
+											<h3 style="text-align: center">plain curvature</h3>
+											<div style="font-size: 10pt; text-align: center">Represents the slope curvature on the profile side which affect landslide creation.</div>
+										</div>
+										<div class="col-4"><span class="image fit"><img src="images/PlanCurvature.jpg" alt="" /></span></div>
+									</div>
+								</div>
+								<p>After determining the No Landslide Zones (NLZ) based on slope, we assigned a hazard value of 1 to the NLZ and a value of 2 to the Landslide Inventory (LS). We then randomly created 1000 points, distributing 700 points for training and 300 points for testing, evenly across the NLZ and LS regions.</p>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+										<tr>
+											<th>Train_Test</th>
+											<th>Hazard</th>
+											<th>Number of points</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>Training</td>
+											<td>1</td>
+											<td>350</td>
+										</tr>
+										<tr>
+											<td>Training</td>
+											<td>2</td>
+											<td>350</td>
+										</tr>
+										<tr>
+											<td>Testing</td>
+											<td>1</td>
+											<td>150</td>
+										</tr>
+										<tr>
+											<td>Testing</td>
+											<td>2</td>
+											<td>150</td>
+										</tr>
+										</tbody>
+										<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>1000</td>
+										</tr>
+										</tfoot>
+									</table>
+								</div>
+								<p>Sample the environmental factors with the training and testing point layers.</p>
+								<div class="image main"><img src="images/trainingPointsSampled.jpg" alt="" /></div>
+							</section>
+							<section class="post">
+								<p style="text-align: center; font-size: x-large">Step 2 - Susceptibility map generation</p>
+								<p>Utilize the training points to conduct a random forest classification on all environmental factors. Convert the classification confidence to class probability, and then validate the output.</p>
+								<div class="image main" style="width: 75%; margin: 0 auto"><img src="images/SusceptibilityMap.jpg" alt="" /><p style="text-align: center">Susceptibility Map</p></div>
+							</section>
+						<section class="post">
+							<p style="text-align: center; font-size: x-large">Step 3 & 4 - Data preprocessing and Exposure assessment</p>
+							<p>For the 2020 WorldPop - Population Counts data of Italy, start by reprojecting and clipping. Then, reclassify the susceptibility map into four categories: low, medium, high, and very high. Finally, resample the reclassified susceptibility raster map to match the extent and resolution of the clipped population raster dataset.</p>
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-6"><span class="image fit"><img src="images/Population.jpg" alt="" /></span></div>
+									<div class="col-6"><span class="image fit"><img src="images/SusceptibilityMap_resample3.jpg" alt="" /></span></div>
+									<div class="col-6" style="text-align: center">Population Map</div>
+									<div class="col-6" style="text-align: center">Resampled Susceptibility Map</div>
+								</div>
+							</div>
+						</section>
+						<section class="post">
+							<p style="text-align: center; font-size: x-large">Step 5 - Develop a website and WebGIS</p>
+							<p>Develop a website that must explain what the project is about, the technologies
+								and data used, the results achieved, and a WebGIS displaying a web map with the
+								produced layers.</p>
+							<ul class="actions special" style="margin-top: 5rem">
+								<li><a href="results.html" class="button large">EXPLORE THE RESULTS</a></li>
+							</ul>
+						</section>
+<!--								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>-->
+
+
+						</div>
+					</div>
+					<!-- Footer -->
+					<footer id="footer">
+						<section class="align-center">
+							<section>
+								<h2>EXPLORE THE SOURCE CODE</h2>
+								<ul class="icons alt">
+									<li><a href="https://github.com/Junjie-Mu/polimi-webgis-class-2024" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Group 6</li><li>polimi-webgis-class-2024</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
