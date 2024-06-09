@@ -1,5 +1,5 @@
 # GIS 2024 - Politecnico di Milano
-Repository for the Web Development part of the GIS Lab 2023 - 2024.
+Repository for the Web Development part of Group 6.
 
 The contents of this repository are entirely for learning purposes. All contents and code is completely open and available and based on open-source software.
 
