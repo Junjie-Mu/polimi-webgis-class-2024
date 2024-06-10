@@ -1,6 +1,8 @@
 # GIS 2024 - Politecnico di Milano
 Repository for the Web Development part of Group 6.
 
+[Click here to browse the page.](https://junjie-mu.github.io/polimi-webgis-class-2024/)
+
 The contents of this repository are entirely for learning purposes. All contents and code is completely open and available and based on open-source software.
 
 ## Installing
