@@ -19,7 +19,7 @@ import TileLayer from 'ol/layer/Tile';
 import XYZ from 'ol/source/XYZ';
 
 new Map({
-  target: 'map',
+  target: 'map_local',
   layers: [
     new TileLayer({
       source: new XYZ({

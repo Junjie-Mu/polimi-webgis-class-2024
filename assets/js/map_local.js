@@ -16,7 +16,7 @@ let basemapLayers = new ol.layer.Group({
 let dtm = new ol.layer.Image({
     title: "DTM",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:dtm' }
     })
 });
@@ -24,7 +24,7 @@ let dtm = new ol.layer.Image({
 let ndvi = new ol.layer.Image({
     title: "NDVI",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:ndvi' }
     })
 });
@@ -32,7 +32,7 @@ let ndvi = new ol.layer.Image({
 let aspect = new ol.layer.Image({
     title: "Aspect",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:aspect' }
     })
 });
@@ -40,7 +40,7 @@ let aspect = new ol.layer.Image({
 let dusaf = new ol.layer.Image({
     title: "DUSAF",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:dusaf' }
     })
 });
@@ -48,7 +48,7 @@ let dusaf = new ol.layer.Image({
 let faults = new ol.layer.Image({
     title: "Faults",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:faults' }
     })
 });
@@ -56,7 +56,7 @@ let faults = new ol.layer.Image({
 let plan = new ol.layer.Image({
     title: "Plan Curvature",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:plan' }
     })
 });
@@ -64,7 +64,7 @@ let plan = new ol.layer.Image({
 let profile = new ol.layer.Image({
     title: "Profile Curvature",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:profile' }
     })
 });
@@ -72,7 +72,7 @@ let profile = new ol.layer.Image({
 let rivers = new ol.layer.Image({
     title: "Rivers",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:rivers' }
     })
 });
@@ -80,7 +80,7 @@ let rivers = new ol.layer.Image({
 let roads = new ol.layer.Image({
     title: "Roads",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:roads' }
     })
 });
@@ -88,7 +88,7 @@ let roads = new ol.layer.Image({
 let slope = new ol.layer.Image({
     title: "Slope",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:slope' }
     })
 });
@@ -102,7 +102,7 @@ let envFactorsLayers = new ol.layer.Group({
 let landslideSusceptibilityMap = new ol.layer.Image({
     title: "Landslide Susceptibility Map",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:LandslideSusceptibilityMap' }
     })
 });
@@ -111,7 +111,7 @@ let NLZ = new ol.layer.Image({
     visible: false,
     title: "No Landslide Zones",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:NLZ' }
     })
 });
@@ -120,7 +120,7 @@ let LS = new ol.layer.Image({
     visible: false,
     title: "Landslide Inventory",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:LS' }
     })
 });
@@ -136,7 +136,7 @@ let trainingPoints = new ol.layer.Image({
     visible: false,
     title: "Training points",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:trainPoints' }
     })
 });
@@ -145,7 +145,7 @@ let testingPoints = new ol.layer.Image({
     visible: false,
     title: "Testing points",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:testPoints' }
     })
 });
@@ -159,15 +159,15 @@ let trainTestPoints = new ol.layer.Group({
 let reclass = new ol.layer.Image({
     title: "Landslide Susceptibility Map_Reclass",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
-        params: { 'LAYERS': 'gisgeoserver_06:LandslideSusceptibilityMap_reclass' }
+        url: 'http://192.168.10.131:8082/geoserver/wms',
+        params: { 'LAYERS': 'gisgeoserver_06:reclass' }
     })
 });
 
 let pop = new ol.layer.Image({
     title: "Population Map",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:population' }
     })
 });
@@ -181,7 +181,7 @@ let exposureAssess = new ol.layer.Group({
 let area = new ol.layer.Image({
     title: "Study area",
     source: new ol.source.ImageWMS({
-        url: 'https://www.gis-geoserver.polimi.it/geoserver/gisgeoserver_06/wms',
+        url: 'http://192.168.10.131:8082/geoserver/wms',
         params: { 'LAYERS': 'gisgeoserver_06:g6_area' }
     })
 });
@@ -234,5 +234,64 @@ var bingAerial = new ol.layer.Tile({
 });
  basemapLayers.getLayers().extend([bingRoads, bingAerial]);
 
+//Add the code for the Pop-up
+var container = document.getElementById('popup');
+var content = document.getElementById('popup-content');
+var closer = document.getElementById('popup-closer');
 
+var popup = new ol.Overlay({
+    element: container
+});
+map.addOverlay(popup);
 
+// This ensures that JQuery ($) is already available in the page.
+$(document).ready(function () {
+    map.on('singleclick', function (event) {
+        //This iterates over all the features that are located on the pixel of the click (can be many)
+        var feature = map.forEachFeatureAtPixel(event.pixel, function (feature, layer) {
+            return feature;
+        });
+
+        //If there is a feature, open the popup by setting a position to it and put the data from the feature
+        if (feature != null) {
+            var pixel = event.pixel;
+            var coord = map.getCoordinateFromPixel(pixel);
+            popup.setPosition(coord);
+            content.innerHTML =
+                '<h5>Colombia Water Areas</h5><br><b>Name: </b>' +
+                feature.get('NAME') +
+                '</br><b>Description: </b>' +
+                feature.get('HYC_DESCRI');
+        } else {
+            var viewResolution = (map.getView().getResolution());
+            var url = colombiaRoads.getSource().getFeatureInfoUrl(event.coordinate, viewResolution, 'EPSG:3857', { 'INFO_FORMAT': 'text/html' });
+
+            if (url) {
+                var pixel = event.pixel;
+                var coord = map.getCoordinateFromPixel(pixel);
+                popup.setPosition(coord);
+                //We do again the AJAX request to get the data from the GetFeatureInfo request
+                $.ajax({ url: url })
+                    .done((data) => {
+                        //Put the data of the GetFeatureInfo response inside the pop-up
+                        //The data that arrives is in HTML
+                        content.innerHTML = data;
+                    });
+            }
+        }
+    });
+});
+
+// The click event handler for closing the popup.
+closer.onclick = function () {
+    popup.setPosition(undefined);
+    closer.blur();
+    return false;
+};
+
+// Adding map event for pointermove
+map.on('pointermove', function (event) {
+    var pixel = map.getEventPixel(event.originalEvent);
+    var hit = map.hasFeatureAtPixel(pixel);
+    map.getTarget().style.cursor = hit ? 'pointer' : '';
+});
